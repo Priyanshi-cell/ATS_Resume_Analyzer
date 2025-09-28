@@ -1,0 +1,12 @@
+# Python virtual environment
+venv/
+__pycache__/
+
+# Environment variables (contains your secret API key)
+.env
+
+# VS Code editor settings
+.vscode/
+
+# Streamlit secrets file (for future deployment)
+.streamlit/
