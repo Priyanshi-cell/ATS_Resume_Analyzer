@@ -1,6 +1,5 @@
 ﻿# ATS_Resume_Analyzer
-
-Project Description
+📄 Project Description
 This is an all-in-one tool for the best learning and applying rules to the job application journey.
 
 No rejection or no weakness is a loss anymore; get ready for the specific job role and get a personalized roadmap.
@@ -13,7 +12,7 @@ Calculate your percentage match with the job role.
 
 Get ready to make changes.
 
-Tech Stack
+🛠️ Tech Stack
 Frontend: Streamlit
 
 Styling: Custom CSS (Animations, Grids, Modern UI)
@@ -25,4 +24,3 @@ PDF Processing: PyMuPDF (fitz) for fast and accurate text extraction.
 Core Language: Python 3.x
 
 Environment Management: python-dotenv
-
