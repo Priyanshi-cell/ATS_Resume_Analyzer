@@ -1,4 +1,4 @@
-/* style.css (V12 - Advanced Dashboard) */
+/* style.css*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
 
 body {
@@ -6,7 +6,7 @@ body {
     color: #a8b2d1;
 }
 
-/* --- Animated Gradient Background --- */
+/* background */
 @keyframes gradient {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
@@ -18,7 +18,7 @@ body {
     animation: gradient 20s ease infinite;
 }
 
-/* --- Main Content Card (Glassmorphism with Glow) --- */
+/*Main content*/
 @keyframes glow {
     0% { box-shadow: 0 0 10px rgba(100, 255, 218, 0.1), 0 0 20px rgba(100, 255, 218, 0.1); }
     50% { box-shadow: 0 0 20px rgba(100, 255, 218, 0.3), 0 0 30px rgba(100, 255, 218, 0.2); }
@@ -33,32 +33,32 @@ section.main > div {
     animation: glow 5s infinite ease-in-out;
 }
 
-/* --- Title and Logo --- */
+/*Title and logo*/
 .title-container { display: flex; align-items: center; gap: 15px; margin-bottom: 2rem; }
 .logo-svg { width: 50px; height: 50px; animation: pulse 2s infinite ease-in-out; }
 .logo-svg .cyan { fill: #64FFDA; }
 .logo-svg .magenta { fill: #ff79c6; }
 .title-container h1 { color: #e6f1ff; margin: 0; font-size: 2.2em; font-weight: 700; text-shadow: 0 0 10px rgba(100, 255, 218, 0.3); }
 
-/* --- Animated Icons for Tab Headers --- */
+/*icons*/
 .tab-header { display: flex; align-items: center; gap: 10px; padding-bottom: 10px; }
 .tab-icon { width: 24px; height: 24px; transition: transform 0.3s ease-in-out; }
 .tab-header:hover .tab-icon { transform: scale(1.2) rotate(5deg); }
 
-/* --- WIDGET STYLING --- */
+/*styling */
 .stTextArea textarea, .stTextInput input { background-color: #0a192f !important; color: #a8b2d1 !important; border: 1px solid #0d3d56 !important; border-radius: 8px !important; box-shadow: 0 0 10px rgba(0, 255, 255, 0.1); }
 .stFileUploader { border: 2px dashed #0d3d56 !important; border-radius: 8px !important; background-color: #0a192f !important; transition: border-color 0.3s ease, background-color 0.3s ease; }
 .stFileUploader:hover { border-color: #64FFDA !important; background-color: #0d3d56 !important; }
 
-/* --- TAB STYLING --- */
+/*tab */
 button[data-baseweb="tab"][aria-selected="true"] { background-color: transparent !important; color: #64FFDA !important; border-bottom: 3px solid #64FFDA !important; }
 button[data-baseweb="tab"] { color: #8892b0 !important; }
 
-/* --- BUTTON STYLING --- */
+/*button */
 .stButton>button { border-radius: 8px !important; border: 1px solid #64FFDA !important; background-image: linear-gradient(45deg, #64FFDA 0%, #ff79c6 100%); color: #0a192f !important; font-weight: 700 !important; transition: all 0.3s ease-in-out !important; box-shadow: 0 0 15px rgba(100, 255, 218, 0.4); background-size: 200% auto; }
 .stButton>button:hover { background-position: right center; box-shadow: 0 0 25px rgba(255, 121, 198, 0.5); transform: translateY(-2px); }
 
-/* --- NEW: ATS DASHBOARD STYLING --- */
+/*ats dashboard*/
 .ats-dashboard {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -80,7 +80,7 @@ button[data-baseweb="tab"] { color: #8892b0 !important; }
     gap: 1rem;
 }
 
-/* --- SCORE RING --- */
+/*scoring*/
 @property --score-percent { syntax: '<integer>'; inherits: false; initial-value: 0; }
 @keyframes score-anim { from { --score-percent: 0; } }
 .score-ring {
@@ -107,7 +107,7 @@ button[data-baseweb="tab"] { color: #8892b0 !important; }
 .score-center span { font-size: 2.8em; font-weight: 700; color: #64FFDA; }
 .score-center p { margin: 0; color: #8892b0; }
 
-/* --- DASHBOARD LISTS (STRENGTHS, WEAKNESSES, KEYWORDS) --- */
+/*dashboard*/
 .dashboard-list {
     background-color: #112240;
     border-radius: 8px;
@@ -133,13 +133,13 @@ button[data-baseweb="tab"] { color: #8892b0 !important; }
     font-size: 0.9em;
 }
 
-/* --- ICONS FOR LISTS --- */
+/*icons for list */
 .dashboard-list h4 .icon-strength { stroke: #64FFDA; }
 .dashboard-list h4 .icon-weakness { stroke: #ffd700; }
 .dashboard-list h4 .icon-missing { stroke: #ff79c6; }
 
 
-/* --- ANIMATIONS --- */
+/*animations*/
 @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.05); }
